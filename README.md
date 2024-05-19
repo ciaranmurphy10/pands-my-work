@@ -19,12 +19,21 @@
 </p>
 
 <p align="center">
-  <img src = "./plots/scatter_plots/petal_length_vs_petal_width_scatter_plot.png" alt = "Petal Length" width="30%" />
-  <img src = "./plots/scatter_plots/sepal_length_vs_petal_length_scatter_plot.png" alt = "Sepal Length" width="30%" />
-  <img src = "./plots/scatter_plots/sepal_length_vs_petal_width_scatter_plot.png" alt = "Sepal Length" width="30%" />
+  <img src = "./plots/scatter_plots/petal_length_vs_petal_width_scatter_plot.png" alt = "Petal Length" width="22%" />
+  <img src = "./plots/scatter_plots/petal_length_vs_sepal_length_scatter_plot.png" alt = "Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/petal_length_vs_sepal_width_scatter_plot.png" alt = "Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/petal_width_vs_petal_length_scatter_plot.png" alt = "Sepal Length" width="22%" />
+
 </p>
 <p align="center">
-  <img src = "./plots/scatter_plots/sepal_length_vs_sepal_width_scatter_plot.png" alt = "Petal Length" width="30%" />
-  <img src = "./plots/scatter_plots/sepal_width_vs_petal_length_scatter_plot.png" alt = "Sepal Length" width="30%" />
-  <img src = "./plots/scatter_plots/sepal_width_vs_petal_width_scatter_plot.png" alt = "Sepal Length" width="30%" />
+  <img src = "./plots/scatter_plots/petal_width_vs_sepal_length_scatter_plot.png" alt = "Petal Length" width="22%" />
+  <img src = "./plots/scatter_plots/petal_width_vs_sepal_width_scatter_plot.png" alt = "Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/sepal_length_vs_petal_length_scatter_plot.png" alt = "Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/sepal_length_vs_petal_width_scatter_plot.png" alt = "Sepal Length" width="22%" />
+</p>
+<p align="center">
+  <img src = "./plots/scatter_plots/sepal_length_vs_sepal_width_scatter_plot.png" alt = "Petal Length" width="22%" />
+  <img src = "./plots/scatter_plots/sepal_width_vs_petal_length_scatter_plot.png" alt = "Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/sepal_width_vs_petal_width_scatter_plot.png" alt = "Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/sepal_width_vs_sepal_length_scatter_plot.png" alt = "Sepal Length" width="22%" />
 </p>
