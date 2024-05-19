@@ -11,10 +11,10 @@
 
 
 <p align="center">
-  <img src="./plots/histograms/petal_length_histogram.png" alt="Top Left Plot" width="45%" />
-  <img src="./images/top-right-plot.png" alt="Top Right Plot" width="45%" />
+  <img src = "./plots/histograms/petal_length_histogram.png" alt = "Petal Length" width="45%" />
+  <img src = "./plots/histograms/petal_width_histogram.png" alt = "Petal Width" width="45%" />
 </p>
 <p align="center">
-  <img src="./images/bottom-left-plot.png" alt="Bottom Left Plot" width="45%" />
-  <img src="./images/bottom-right-plot.png" alt="Bottom Right Plot" width="45%" />
+  <img src="./plots/histograms/sepal_length_histogram.png" alt="Sepal Length" width="45%" />
+  <img src="./plots/histograms/sepal_width_histogram.png" alt="Sepal Width" width="45%" />
 </p>
