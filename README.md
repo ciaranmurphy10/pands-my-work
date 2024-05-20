@@ -64,7 +64,7 @@ From this visual representation, we can confirm our earlier conclusion that the 
 
 ## KDE Plots
 
-KDE (Kernel Density Estimation) plots are analogous to histograms in that they represent the distribution of values in a data set, but their methods of representation are very different. A KDE plot visualises the continuous probability density curve of a variable, and since multiple curves can be more easily displayed overlapping on a single plot, we can separate variables into different dimensions and display their continuous probability density curves on one on one plot. In our case, we will examine four plots (one for each measurement type) and separate the plots into three dimensions (one for each species type). 
+KDE (Kernel Density Estimation) plots are analogous to histograms in that they represent the distribution of values in a data set, but their methods of representation are very different. A KDE plot visualises the continuous probability density curve of a variable, and since multiple curves can be more easily displayed overlapping on a single plot, we can separate variables into different dimensions and display their continuous probability density curves on one on one plot using colour to distinguish them. In our case, we will examine four plots (one for each measurement type) and separate the plots into three dimensions (one for each species type). 
 
 <p align="center">
   <img src = "./plots/kde_plots/petal_length_kde_plot.png" alt = "Petal Length" width="45%" />
@@ -75,40 +75,115 @@ KDE (Kernel Density Estimation) plots are analogous to histograms in that they r
   <img src="./plots/kde_plots/sepal_width_kde_plot.png" alt="Sepal Width" width="45%" />
 </p>
 
-From this view, we can clearly see how the distribution of lengths and widths is different depending on the species width. If we focus on petal_length, we can see how the Iris-setosa is responsible for the dense grouping of values in the 1-2cm range, and Iris-versicolor and Iris-virginica correspond with the two other peaks. Similar groups of density can be seen in the other measurements which were not as obvious with histograms. 
+From this view, we can clearly see how the distribution of lengths and widths is different depending on the species width. If we focus on petal_length, we can see how the Iris-setosa is responsible for the dense grouping of values in the 1-2cm range, and Iris-versicolor and Iris-virginica correspond with the two other peaks. Similar groups of density can be seen in the other measurements which were not as obvious with histograms. While histograms and KDE plots allow us to examine the distribution of individual variables, they don't tell us anything about the relationships between variables. We'll need other charts for that.  
 
 ## Scatter Plots & Pair Plots
 
 Scatter plots visualise the relationship between two numerical variables. Observations are plotted as points on a two dimensional cartesian plane, with one variable represented by the x-axis and another variable represented on the y-axis. A third, categorical variable, can be represented by the colour of each point. 
 
-In our case, we will plot each unordered pair of variables. Since we have six pairs of unordered variables, we could display these plots on a 4x grid, similar to how we displayed 2x2 grids of histograms and KDE plots. 
+In our case, we will plot each unordered pair of variables. Since we have six pairs of unordered variables, we could display these plots on an 8x2 grid, similar to how we displayed 2x2 grids of histograms and KDE plots. 
 
 <p align="center">
-  <img src = "./plots/scatter_plots/petal_length_vs_petal_width_scatter_plot.png" alt = "Petal Length vs Petal Width" width="22%" />
-  <img src = "./plots/scatter_plots/petal_length_vs_sepal_length_scatter_plot.png" alt = "Petal Length vs Sepal Length" width="22%" />
-  <img src = "./plots/scatter_plots/petal_length_vs_sepal_width_scatter_plot.png" alt = "Petal Length vs Sepal Width" width="22%" />
-  <img src = "./plots/scatter_plots/petal_width_vs_petal_length_scatter_plot.png" alt = "Petal Width vs Petal Length" width="22%" />
+  <img src = "./plots/scatter_plots/petal_length_vs_petal_width_scatter_plot.png" alt = "Petal Length vs Petal Width" width="45%" />
+  <img src = "./plots/scatter_plots/petal_length_vs_sepal_length_scatter_plot.png" alt = "Petal Length vs Sepal Length" width="45%" />
 </p>
 <p align="center">
-  <img src = "./plots/scatter_plots/petal_width_vs_sepal_length_scatter_plot.png" alt = "Petal Width vs Sepal Length" width="22%" />
-  <img src = "./plots/scatter_plots/petal_width_vs_sepal_width_scatter_plot.png" alt = "Petal Width vs Sepal Width" width="22%" />
-  <img src = "./plots/scatter_plots/sepal_length_vs_petal_length_scatter_plot.png" alt = "Sepal Length vs Petal Length" width="22%" />
-  <img src = "./plots/scatter_plots/sepal_length_vs_petal_width_scatter_plot.png" alt = "Sepal Length vs Petal Width" width="22%" />
+  <img src = "./plots/scatter_plots/petal_width_vs_sepal_length_scatter_plot.png" alt = "Petal Width vs Sepal Length" width="45%" />
+  <img src = "./plots/scatter_plots/petal_width_vs_sepal_width_scatter_plot.png" alt = "Petal Width vs Sepal Width" width="45%" />
 </p>
 <p align="center">
-  <img src = "./plots/scatter_plots/sepal_length_vs_sepal_width_scatter_plot.png" alt = "Sepal Length vs Sepal Width" width="22%" />
-  <img src = "./plots/scatter_plots/sepal_width_vs_petal_length_scatter_plot.png" alt = "Sepal Width vs Petal Length" width="22%" />
-  <img src = "./plots/scatter_plots/sepal_width_vs_petal_width_scatter_plot.png" alt = "Sepal Width vs Petal Width" width="22%" />
-  <img src = "./plots/scatter_plots/sepal_width_vs_sepal_length_scatter_plot.png" alt = "Sepal Width vs Sepal Length" width="22%" />
+  <img src = "./plots/scatter_plots/sepal_length_vs_sepal_width_scatter_plot.png" alt = "Sepal Length vs Sepal Width" width="45%" />
+  <img src = "./plots/scatter_plots/sepal_width_vs_petal_length_scatter_plot.png" alt = "Sepal Width vs Petal Length" width="45%" />
+</p>
+<p align="center">
+  <img src = "./plots/scatter_plots/petal_width_vs_petal_length_scatter_plot.png" alt = "Petal Width vs Petal Length" width="45%" />
+  <img src = "./plots/scatter_plots/sepal_length_vs_petal_width_scatter_plot.png" alt = "Sepal Length vs Petal Width" width="45%" />
+</p>
+<p align="center">
+  <img src = "./plots/scatter_plots/petal_length_vs_sepal_width_scatter_plot.png" alt = "Petal Length vs Sepal Width" width="45%" />
+  <img src = "./plots/scatter_plots/sepal_length_vs_petal_length_scatter_plot.png" alt = "Sepal Length vs Petal Length" width="45%" />
+</p>
+<p align="center">
+  <img src = "./plots/scatter_plots/sepal_width_vs_petal_width_scatter_plot.png" alt = "Sepal Width vs Petal Width" width="45%" />
+  <img src = "./plots/scatter_plots/sepal_width_vs_sepal_length_scatter_plot.png" alt = "Sepal Width vs Sepal Length" width="45%" />
 </p>
 
-An alternative way to display groups of related scatter plots however is through a pair plot, which plots scatter plots of all pairs of variables on one graph along with their corresponding KDE plots. Each scatter plot and its inverse is displayed symmetrically across the top left to bottom right diagonal. 
+An alternative way to display groups of related scatter plots however, is through a pair plot, which plots scatter plots of all pairs of variables on one graph along with their corresponding KDE plots. Each scatter plot and its inverse is displayed symmetrically across the top left to bottom right diagonal. 
 
 <p align="center">
   <img src = "./plots/pair_plots/iris_pair_plot.png" alt = "Pair Plot" width="90%" />
 </p>
 
+In this representation, we sacrifice some of the detail available with larger individual plots, such as the y-axis scale of the KDE plots or the ease of distinguishing some of the scatter plot points. What we gain however, is a birds-eye view of the density of our variables and the correlation between them, which can be extremely useful for spotting patterns and relationships.
 
+An interesting observation that can be inferred from this view is that as petal_length increases, so does sepal_length, petal_width, and to a lesser extent sepal_width, but only for Iris-versicolor and Iris-virginica. While Iris-setosa does have variation in some variables such as sepal_width and sepal_length, there appears to be little positive or negative correlation between sepal_length and any other variable for Iris-setosa.  This corresponds with the large spikes in density that can be seen on the KDE plot for petal_length. While correlation may be apparent from viewing these plots, to verify it we'll need to perform a statistical test. 
+
+# Correlation
+
+There are various statistical tests we can perform to measure correlation between two variales. One common way is to calculate the Pearson correlation coefficient, which measures the strength of the linear relationship between two variables. A Pearson correlation coefficient of 1 indicates a perfect linear relationship, -1 indicates a perfect negative relationship, and 0 indicates no correlation between the variables. We'll first examinie a correlation matrix which shows the correlation between variables regardless of species. 
+
+<center>
+
+|              |   sepal_length |   sepal_width |   petal_length |   petal_width |
+|:-------------|---------------:|--------------:|---------------:|--------------:|
+| sepal_length |       1        |     -0.109369 |       0.871754 |      0.817954 |
+| sepal_width  |      -0.109369 |      1        |      -0.420516 |     -0.356544 |
+| petal_length |       0.871754 |     -0.420516 |       1        |      0.962757 |
+| petal_width  |       0.817954 |     -0.356544 |       0.962757 |      1        |
+
+</center>
+
+This table analogeous to our pair plot above (excluding the species dimensionality), except that rather than inferring the correlation between two variables by how linear the relationship seems, we can see the correlation coefficient between the two variables.  A correlation coefficient of 0.96 between petal_width and petal_length for instance implies strong linearity, which corresponds with the visual representation in the scatter plot above. 
+
+To verify our earlier observation regarding the difference in correlation between petal_length and sepal_length, petal_length, and petal_width depending on species type, we'll need to examine the correlation matrices of each species. 
+
+### Iris-setosa
+
+<div align="center">
+
+|                     |   sepal_length_setosa |   sepal_width_setosa |   petal_length_setosa |   petal_width_setosa |
+|:--------------------|----------------------:|---------------------:|----------------------:|---------------------:|
+| sepal_length_setosa |              1        |             0.74678  |              0.263874 |             0.279092 |
+| sepal_width_setosa  |              0.74678  |             1        |              0.176695 |             0.279973 |
+| petal_length_setosa |              0.263874 |             0.176695 |              1        |             0.306308 |
+| petal_width_setosa  |              0.279092 |             0.279973 |              0.306308 |             1        |
+
+</div>
+
+### Iris-versicolor
+
+<center>
+
+|                         |   sepal_length_versicolor |   sepal_width_versicolor |   petal_length_versicolor |   petal_width_versicolor |
+|:------------------------|--------------------------:|-------------------------:|--------------------------:|-------------------------:|
+| sepal_length_versicolor |                  1        |                 0.525911 |                  0.754049 |                 0.546461 |
+| sepal_width_versicolor  |                  0.525911 |                 1        |                  0.560522 |                 0.663999 |
+| petal_length_versicolor |                  0.754049 |                 0.560522 |                  1        |                 0.786668 |
+| petal_width_versicolor  |                  0.546461 |                 0.663999 |                  0.786668 |                 1        |
+
+</center>
+
+### Iris-virginica
+
+<center>
+
+|                        |   sepal_length_virginica |   sepal_width_virginica |   petal_length_virginica |   petal_width_virginica |
+|:-----------------------|-------------------------:|------------------------:|-------------------------:|------------------------:|
+| sepal_length_virginica |                 1        |                0.457228 |                 0.864225 |                0.281108 |
+| sepal_width_virginica  |                 0.457228 |                1        |                 0.401045 |                0.537728 |
+| petal_length_virginica |                 0.864225 |                0.401045 |                 1        |                0.322108 |
+| petal_width_virginica  |                 0.281108 |                0.537728 |                 0.322108 |                1        |
+
+</center>
+<br />
+
+We're presented with a lot of information here, but we can cherry pick the pieces we need. From the pair plot, it appeared that Iris-setosa petal_length had a weak linear relationship with the other variables. We can read from the Iris-setosa table that its petal_length has a Pearson correlation coefficient of 0.26, 0.18, and 0.31 with sepal_length, petal_length, petal_width respectively. These relatively low values confirm our earlier observations of weak correlation. 
+
+Iris-versicolor petal_length on the other hand, has correlation coefficients of 0.75, 0.56, and 0.79 with sepal_length, petal_length, petal_width, and Iris-virginica petal_length has correlation coefficients of 0.86, 0.40, and 0.32 with sepal_length, petal_length, petal_width respectively. These generally higher correlation coefficients indicate a stronger linear relationship between petal_length and the other variables for Iris-versicolor and Iris-virginica.
+
+# Conclusion
+
+In conclusion, we've used various statistical summaries, charts, and tests to investigate the Iris dataset and uncover some insights and relationships between the variables, such as the relative distribution symmetry of the sepal measurements vs the petal measurements, the effect that species type has on probability density, and the how the correlation between variables is dependent on species type. 
 
 # References
 
@@ -122,6 +197,8 @@ An alternative way to display groups of related scatter plots however is through
 - [https://statisticsbyjim.com/basics/histograms/](https://statisticsbyjim.com/basics/histograms/)
 - [https://en.wikipedia.org/wiki/Kernel_density_estimation](https://en.wikipedia.org/wiki/Kernel_density_estimation)
 - [https://en.wikipedia.org/wiki/Scatter_plot](https://en.wikipedia.org/wiki/Scatter_plot)
+- [https://www.analyticsvidhya.com/blog/2024/02/pair-plots-in-machine-learning/](https://www.analyticsvidhya.com/blog/2024/02/pair-plots-in-machine-learning/)
+-[https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/](https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/)
 
 ## Code
 
@@ -141,3 +218,10 @@ An alternative way to display groups of related scatter plots however is through
 - [https://www.geeksforgeeks.org/seaborn-kdeplot-a-comprehensive-guide/](https://www.geeksforgeeks.org/seaborn-kdeplot-a-comprehensive-guide/)
 - [https://seaborn.pydata.org/tutorial/color_palettes.html](https://seaborn.pydata.org/tutorial/color_palettes.html)
 - [https://seaborn.pydata.org/generated/seaborn.kdeplot.html](https://seaborn.pydata.org/generated/seaborn.kdeplot.html)
+-[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html)
+-[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html)
+-[https://www.geeksforgeeks.org/ways-to-filter-pandas-dataframe-by-column-values/](https://www.geeksforgeeks.org/ways-to-filter-pandas-dataframe-by-column-values/)
+-[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_markdown.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_markdown.html)
+-[https://realpython.com/numpy-scipy-pandas-correlation-python/](https://realpython.com/numpy-scipy-pandas-correlation-python/)
+-[https://www.geeksforgeeks.org/exploring-correlation-in-python/](https://www.geeksforgeeks.org/exploring-correlation-in-python/)
+-[https://realpython.com/list-comprehension-python/](https://realpython.com/list-comprehension-python/)
